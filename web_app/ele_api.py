@@ -2,6 +2,7 @@ from flask import Flask, jsonify
 from ensto_e import ElePrice
 import ast
 from datetime import datetime
+import os
 
 example_response = {
     "2025-01-25T01:00:00+02:00": 0.279,
@@ -69,7 +70,10 @@ app = Flask(__name__)
 @app.route('/api', methods=['GET'])
 def api_endpoint():
     """A simple API endpoint that returns a JSON response."""
-    with open("price_info.py", 'r') as file:
+    # Construct the file path
+    file_path = os.path.join(os.path.dirname(__file__), "price_info.py")
+
+    with open(file_path, 'r') as file:
         file_content = file.read()
 
     # Convert the string content to a dictionary

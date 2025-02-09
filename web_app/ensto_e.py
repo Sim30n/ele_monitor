@@ -112,9 +112,11 @@ if __name__ == "__main__":
     price_data = ele_price.get_price_info()
     dict_format = ele_price.format_price_to_dict(price_data)
 
-    file_name = "price_info.py"
+    # Construct the file path
+    file_path = os.path.join(os.path.dirname(__file__), "price_info.py")
+
     # Write the content to the file
-    with open(file_name, "w") as file:
+    with open(file_path, "w") as file:
         file.write(str(dict_format))
 
     #print(json_format)
