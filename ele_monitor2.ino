@@ -38,7 +38,7 @@ void setup() {
   lcd.backlight();
 
   lcd.setCursor(0,0);
-  lcd.print("Käynnistetään...");
+  lcd.print("Alustetaan...");
 
   //Initialize serial:
   Serial.begin(9600);
