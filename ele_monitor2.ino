@@ -37,6 +37,9 @@ void setup() {
   lcd.init();
   lcd.backlight();
 
+  lcd.setCursor(0,0);
+  lcd.print("Käynnistetään...");
+
   //Initialize serial:
   Serial.begin(9600);
 
@@ -57,6 +60,7 @@ void setup() {
 
   // start the WiFi OTA library with internal (flash) based storage
   ArduinoOTA.begin(WiFi.localIP(), "Arduino", "password", InternalStorage);
+
 
   // you're connected now, so print out the status:
   printWifiStatus();
