@@ -1,0 +1,11 @@
+profiles:
+  mkrwifi1010:
+    fqbn: arduino:samd:mkrwifi1010
+    platforms:
+      - platform: arduino:samd (1.8.14)
+    libraries:
+      - WiFiNINA (1.9.0)
+      - ArduinoOTA (1.1.0)
+      - ArduinoJson (7.3.0)
+      - ArduinoHttpClient (0.6.1)
+      - LiquidCrystal I2C (1.1.2)
