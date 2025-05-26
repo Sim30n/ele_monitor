@@ -8,4 +8,6 @@ Create arduino_screts.h file that includes:
 #define SECRET_PASS "wifi_password"
 #define SECRET_SERVER "server_ip"
 
-See arduino_secrets.example.h file
+See arduino_secrets.example.h 
+
+file![Nimetön (2)](https://github.com/user-attachments/assets/e95c3bf1-6e51-4d4a-9980-aa252e9faf1f)
