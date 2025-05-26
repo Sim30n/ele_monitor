@@ -5,6 +5,7 @@ This guide explains how to set up a cron job to run `ensto_e.py` daily at midnig
 
 ## Prerequisites
 - Ensure you have Python installed in the specified virtual environment.
+- create .env file with ensto_e token. See .env.example file.
 - Confirm that the script `<path_to_project>/web_app/ensto_e.py` is executable.
 - The user running the cron job should have the necessary permissions.
 

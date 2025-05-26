@@ -7,3 +7,5 @@ Create arduino_screts.h file that includes:
 #define SECRET_SSID "wifi_name"
 #define SECRET_PASS "wifi_password"
 #define SECRET_SERVER "server_ip"
+
+See arduino_secrets.example.h file
