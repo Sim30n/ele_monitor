@@ -93,7 +93,8 @@ def api_endpoint():
             current_datetime.year == target_datetime.year and
             current_datetime.month == target_datetime.month and
             current_datetime.day == target_datetime.day and
-            current_datetime.hour == target_datetime.hour
+            current_datetime.hour == target_datetime.hour and
+            (current_datetime.minute // 15) == (target_datetime.minute // 15)
         )
         price_to_send = 999
         if is_same_hour:
